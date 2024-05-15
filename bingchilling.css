@@ -1,0 +1,251 @@
+/* ==UserStyle==
+@name         Bing-Chillin          
+@version      20240515.0            
+@namespace    userstyles.world/user/berlintay
+@description  bing search page with less copilot popups and some enhancements for focusing. Microsoft 1.0 logo and clippy as copilot button
+@author       berlintay
+@license      CC 4.0
+==/UserStyle== */
+
+
+@-moz-document url-prefix("https://www.bing.com/") {
+
+    body {
+        background-image: url(https://i.imgur.com/oQB0EuT.png);
+        background-repeat: repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
+    .b_dark #sb_form #chat_upsell_bubble_icon {
+        border-color: #5452500a;
+        color: #edebe900;
+        background: url(https://i.imgur.com/iDl7z48.png);
+        background-size: 40px 40px;
+    }
+    #b_results > li {
+        background-color: rgb(0 0 0 / 0%);
+        border-radius: 0px;
+        width: max-content;
+    }
+    #b_results > .b_algo {
+        padding: 10px 32px 0;
+    }
+    .tab-menu.tab-flex ul {
+        display: none;
+    }
+    #b_context .b_ans,
+    #b_context #wpc_ag {
+        display: none;
+    }
+    .b_dark #b_header {
+        background: #1f375b75;
+    }
+    #b_sh_btn {
+        border: none;
+        background-color: #3b3a3900;
+    }
+    #b-scopeListItem-conv .scp_conv_mode,
+    #b-scopeListItem-web .scp_conv_mode {
+        margin-right: 6px;
+        background-size: 0;
+        display: none;
+        vertical-align: middle;
+        position: relative;
+        text-indent: 0;
+        overflow: hidden;
+        direction: ltr;
+        transform: none;
+    }
+    .b_searchboxForm {
+        margin-left: 440px;
+    }
+    .b_logo:after {
+        content: url(https://i.imgur.com/RVJ7AjW.png);
+        position: fixed;
+        transform: scale(.5);
+        margin-left: 50px;
+    }
+    #b_pole .iavs {
+        display: none;
+    }
+    .b_searchboxForm,
+    .sa_as .sa_drw {
+        background-color: #3b3a3914;
+    }
+    body,
+    .b_no h4,
+    h2 .b_secondaryText,
+    h2 .b_alert,
+    .b_underSearchbox,
+    #b_header {
+        font: 14px / normal 'Roboto', Helvetica, Sans-Serif;
+    }
+
+
+    .b_rrsr {
+        background-color: #0e1818bd;
+        border-radius: inherit;
+        padding: inherit;
+        margin: auto;
+        position: absolute;
+        top: 20px;
+        left: 1500px;
+        right: auto;
+    }
+    body,
+    .b_no h4,
+    h2 .b_secondaryText,
+    h2 .b_alert,
+    .b_underSearchbox,
+    #b_header {
+        font: 14px / normal 'Montserrat Medium', Helvetica, Sans-Serif;
+    }
+    .b_dark #sb_form #chat_upsell_bubble_icon:hover {
+        background: url(https://i.imgur.com/iDl7z48.png);
+        background-size: 40px 40px;
+    }
+    #mfa_root {
+        display: none;
+    }
+
+    .mc_vtvc > a {
+        color: #d2d0ce;
+        display: contents;
+        text-decoration: none;
+        width: auto;
+    }
+    .b_pag_lets_chat {
+        display: none;
+    }
+    .b_pag a.sb_bp {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .mc_vtvc {
+        background-color: #3b3a391f;
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, .05);
+        line-height: 0;
+        margin: 0;
+        position: relative;
+        border-radius: 6px;
+        left: 400px;
+    }
+    #b_results > .b_ans {
+        padding: 12px 20px 0;
+        display: none;
+    }
+    .pagereco_CBCntr {
+        display: none;
+    }
+    #b_results > li {
+        background-color: rgba(0, 0, 0, 0);
+        border-radius: 0px;
+        width: inherit;
+        margin-left: 400px;
+    }
+
+    body.b_dark #b_results,
+    body.b_dark #b_results .b_defaultText,
+    body.b_dark #b_results > .b_pag a:hover,
+    body.b_dark #b_tween .b_toggle:hover,
+    body.b_dark #b_tween .b_highlighted {
+        color: #d2d0ce;
+    }
+
+    .b_dark,
+    .b_dark .b_fpage,
+    .b_dark #b_content {
+        background-color: #1b1a1914;
+        color: #ffffff;
+        border-color: #53c1e3;
+    }
+
+    #b_context .b_ans,
+    #b_context #wpc_ag {
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 0px;
+    }
+    #est_switch + #sb_form .b_searchboxForm,
+    #est_switch + #sb_form .b_searchboxForm:hover {
+        border-top-left-radius: 24px;
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+    .lite-entcard-main {
+        display: none;
+    }
+    #b_header #sw_as #sa_ul,
+    #uaanswer #sw_as #sa_ul,
+    #sw_as #sa_ul li:last-of-type {
+        border-radius: 0 0 24px 24px;
+        background: rgba(0, 0, 0, 0.7);
+    }
+    #sw_as li.pp_tile.sa_hv,
+    #sw_as .sa_hv {
+        background-color: rgb(35, 38, 39, 0.7);
+    }
+    #mfa_root .mfa_btn {
+        background-image: initial;
+        background-color: rgb(24, 26, 27, 0.9);
+    }
+    #ev_hook {
+        background-image: initial;
+        height: 0;
+    }
+    .ev_talkbox_wrapper_min {
+        background-color: transparent;
+        opacity: 0;
+    }
+    #b_header {
+        border-bottom-color: rgb(0, 0, 0, 0.19);
+    }
+    .mc_vtvc {
+        background-color: rgb(24, 26, 27, 0.5);
+    }
+    .b_hPanel {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    .b_ans .bq_sideBleed {
+        opacity: 0;
+    }
+    .b_tophb .bgtopwh {
+        background-color: rgb(24, 26, 27, 0.4);
+    }
+    .b_tophb .bgtopgr {
+        background-color: rgb(30, 32, 33, 0.4);
+    }
+    .ref_multiAns .b_slidebar .slide {
+        background-color: rgb(24, 26, 27, 0.5);
+    }
+    #fbtop > div > a,
+    #fbtop > div > a:visited {
+        color: rgb(157, 149, 136, 0);
+    }
+  
+    .b_footer,
+    .b_footer a,
+    .b_footer a:visited {
+        margin-top: 0px !important;
+    }
+    .phead.phead_smallest {
+        background-color: rgb(24, 26, 27, 0.3);
+    }
+    #est_switch + #sb_form .b_searchboxForm,
+    #est_switch + #sb_form .b_searchboxForm:hover {
+        border-top-left-radius: 24px;
+        background: rgba(0, 0, 0, 0.4);
+    }
+
+    li.b_ad.b_adTop,
+    li.b_ad b_adBottom,
+    li.b_ad {
+        opacity: 0;
+        height: 0px !important;
+        width: 0px;
+    }
+}
